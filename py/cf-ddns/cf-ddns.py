@@ -53,4 +53,5 @@ if __name__ == '__main__':
             if DEBUG: 
                 dns_records = cf.zones.dns_records.get(zone_id, params={'name':dname + '.' + zone_name})
                 print(dns_records)
+        else:
             print(f'{dname} IP has not Changed!')
